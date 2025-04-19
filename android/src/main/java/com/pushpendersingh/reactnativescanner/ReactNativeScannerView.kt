@@ -146,7 +146,7 @@ class ReactNativeScannerView(context: Context) : LinearLayout(context) {
 
         lifecycleCameraController = LifecycleCameraController(context).apply {
             bindToLifecycle(reactApplicationContext.currentActivity as AppCompatActivity)
-            cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
+            cameraSelector = CameraSelector.DEFAULT_FRONT_CAMERA
         }
 
         preview.controller = lifecycleCameraController
