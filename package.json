@@ -1,6 +1,6 @@
 {
 	"name": "@sommomicc/react-native-scanner",
-	"version": "1.5.0",
+	"version": "1.5.1",
 	"description": "A QR code & Barcode Scanner for React Native Projects.",
 	"main": "lib/commonjs/index",
 	"module": "lib/module/index",
@@ -38,7 +38,11 @@
 		"bootstrap": "yarn example && yarn install && yarn example pods",
 		"clean": "del-cli android/build example/android/build example/android/app/build example/ios/build"
 	},
-	"keywords": ["react-native", "ios", "android"],
+	"keywords": [
+		"react-native",
+		"ios",
+		"android"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/sommoMicc/react-native-scanner.git"
@@ -95,7 +99,9 @@
 		]
 	},
 	"commitlint": {
-		"extends": ["@commitlint/config-conventional"]
+		"extends": [
+			"@commitlint/config-conventional"
+		]
 	},
 	"release-it": {
 		"git": {
@@ -116,7 +122,10 @@
 	},
 	"eslintConfig": {
 		"root": true,
-		"extends": ["@react-native-community", "prettier"],
+		"extends": [
+			"@react-native-community",
+			"prettier"
+		],
 		"rules": {
 			"prettier/prettier": [
 				"error",
@@ -130,7 +139,10 @@
 			]
 		}
 	},
-	"eslintIgnore": ["node_modules/", "lib/"],
+	"eslintIgnore": [
+		"node_modules/",
+		"lib/"
+	],
 	"prettier": {
 		"quoteProps": "consistent",
 		"singleQuote": true,
