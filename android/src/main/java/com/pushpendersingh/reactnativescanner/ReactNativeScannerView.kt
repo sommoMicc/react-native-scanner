@@ -262,7 +262,7 @@ class ReactNativeScannerView(context: Context) : LinearLayout(context) {
                         it.setAnalyzer(cameraExecutor, mlKitAnalyzer)
                     }
 
-                val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
+                val cameraSelector = CameraSelector.DEFAULT_FRONT_CAMERA
 
                 isCameraRunning = true
 
@@ -337,7 +337,7 @@ class ReactNativeScannerView(context: Context) : LinearLayout(context) {
         if (!isCameraRunning) {
             try {
                 val reactContext = context as ReactContext
-                val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
+                val cameraSelector = CameraSelector.DEFAULT_FRONT_CAMERA
 
                 mCameraProvider?.bindToLifecycle(
                     reactContext.currentActivity as AppCompatActivity,
