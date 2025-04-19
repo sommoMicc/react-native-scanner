@@ -1,6 +1,6 @@
 {
 	"name": "@sommomicc/react-native-scanner",
-	"version": "1.5.1",
+	"version": "1.5.2",
 	"description": "A QR code & Barcode Scanner for React Native Projects.",
 	"main": "lib/commonjs/index",
 	"module": "lib/module/index",
